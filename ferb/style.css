@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.face{
+    background-color: #fce2c4;
+    border:4px solid #ffa945;
+    width: 66px;
+    height: 297px;
+    border-bottom: none;
+    transform: rotate(4deg);
+}
+.leftBigEye,.rightBigEye{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border:3px solid black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftBigEye{
+    top: -73px;
+    left: -87px;
+    width: 40px;
+    height: 40px;
+}
+.rightBigEye{
+    top: -67px;
+    left: -101px;
+    z-index: 2;
+}
+.smallblackEye{
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+}
+.smallWhiteEye{
+    width:3px;
+    height:3px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+}
+.smallWhiteEye{
+    top: 2px;
+    left: 4px;
+}
+.ear{
+    background-color: #fce2c4;
+    width: 25px;
+    height: 25px;
+    border: 4px solid #ffa945;
+    border-radius: 50%;
+    border-left-color: transparent;
+    transform: rotate(360deg);
+    position: relative;
+    top: -27px;
+    left: -94px;
+}
+.nose{
+    background-color: #fce2c4;
+    width: 45px;
+    height: 40px;
+    border: 4px solid #ffa945;
+    border-radius: 11px 0 0 11px;
+    position: relative;
+    top: -37px;
+    left: -239px;
+    z-index: 1;
+    border-right-color: transparent;
+    transform: rotate(4deg);
+}
+.nose::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fce2c4;
+    border-top: 4px solid #ffa945;
+    top: -4px;
+    left: 45px;
+}
+.mouth{
+    background-color: #fce2c4;
+    width: 8px;
+    height: 16.2px;
+    border: 4px solid #ffa945;
+    position: relative;
+    top: 47px;
+    left: -254.3px;
+    transform: skew(-35deg);
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-radius: 4px;
+    border-bottom: 3px solid #ffa954;
+
+}
+/* .hair{
+    clip-path: polygon(83% 0, 68% 15%, 93% 18%, 46% 19%, 54% 34%, 27% 16%, 7% 37%, 13% 25%, 0 28%, 17% 5%);
+    background-color: green;
+    width: 146px;
+    height: 166px;
+    position: relative;
+    top: -209px;
+    left: -293px;
+    transform: rotate(185deg);
+} */
+.hair>div:nth-child(1){
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid green;
+    left: 609px;
+    top: 175px;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(47deg);
+}
+.hair>div:nth-child(2){
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid green;
+    left: 590px;
+    top: 188px;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(25deg);
+}
+.hair>div:nth-child(3){
+    position: absolute;
+    height: 44px;
+    width: 76px;
+    border-top: 20px solid green;
+    left: 632px;
+    top: 210px;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(-7deg);
+}
+.hair>div:nth-child(4){
+    position: absolute;
+    height: 30px;
+    width: 62px;
+    border-top: 20px solid green;
+    left: 655px;
+    top: 192px;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(141deg);
+}
+.hair>div:nth-child(5){
+    position: absolute;
+    height: 30px;
+    width: 62px;
+    border-top: 20px solid green;
+    left: 662px;
+    top: 207px;
+    border-radius: 38px 59px 0 0;
+    transform: rotate(71deg);
+}
+.hair>div:nth-child(6){
+    position: absolute;
+    height: 30px;
+    width: 62px;
+    border-top: 20px solid green;
+    left: 676px;
+    top: 214px;
+    border-radius: 38px 59px 0 0;
+    transform: rotate(30deg);
+}
+.hair>div:nth-child(7){
+    position: absolute;
+    height: 30px;
+    width: 62px;
+    border-top: 20px solid green;
+    left: 671px;
+    top: 196px;
+    border-radius: 70px 59px 0 0;
+    transform: rotate(-13deg);
+}
+.hair>div:nth-child(8){
+    position: absolute;
+    height: 30px;
+    width: 62px;
+    border-top: 20px solid green;
+    left: 652px;
+    top: 167px;
+    border-radius: 70px 59px 0 0;
+    transform: rotate(99deg);
+
+}

@@ -1,0 +1,65 @@
+body{
+    margin:0;
+}
+.mustashe{
+    position: absolute;
+    left: 414px;
+    width:180px;
+    height:180px;
+    color:black;
+    border-radius: 50%;
+    box-shadow: 150px 240px 0 0 currentColor,
+     300px 240px 0 0 currentColor;
+}
+.mustashe::before{
+    content: '';
+    position: absolute;
+    width: 210px;
+    height: 120px;
+    border-bottom: 180px solid black;
+    border-radius: 0 0 0 100%;
+    left: 30px;
+    top: 120px;
+    transform: rotate(-40deg);
+    transform-origin: right 210px;
+}
+.mustashe::after{
+    content: '';
+    position: absolute;
+    width: 210px;
+    height: 120px;
+    border-bottom: 180px solid black;
+    border-radius: 0 0 100% 0;
+    left: 389px;
+    top: 120px;
+    transform: rotate(40deg);
+    transform-origin: left 210px;
+}
+.mustashe::before{
+    animation:danceLeft 1s ease-in-out infinite;
+}
+.mustashe::after{
+    animation:danceRight 1s ease-in-out infinite;
+}
+@keyframes danceLeft{
+    0% {
+        transform: rotate(-50deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(-50deg);
+    }
+}
+@keyframes danceRight{
+    0% {
+        transform: rotate(50deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(50deg);
+    }
+}
